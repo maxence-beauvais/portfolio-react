@@ -1,0 +1,181 @@
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
+.wrap{max-width:760px;margin:0 auto;padding:1.25rem 1rem 3rem}
+a{color:#1a56b0}
+header{padding-bottom:1rem;border-bottom:1px solid #ddd;margin-bottom:1.5rem}
+.center-select {
+    text-align: center;
+    
+    border-radius: 15px; 
+    
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    
+    border: none;
+    color: white; 
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.center-select option {
+    color: black; 
+    background-color: white; 
+}
+
+header nav:nth-of-type(2) {
+    justify-content: center;
+}
+
+/* Centrage de l'en-tête */
+.text-center {
+    text-align: center;
+}
+.text-center h1 {
+    margin: 0 0 .25rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+h1, h2 {
+    font-size: 1.25rem;
+    margin: 2rem 0 .75rem;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid #ddd;
+    /* Dégradé de texte */
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+a {
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Couleur adaptée pour les icônes à l'intérieur des liens */
+a i {
+    color: #96C4D9;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    border-radius: 4px;
+}
+
+
+.fa, .fas, .fab, .fa-solid, .fa-brands {
+    margin-right: 0.4rem;
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    display: inline-block;
+}
+
+
+
+.profil-pic {
+    float: right;
+    margin-left: 1.5rem;
+    margin-top: 5rem; /* Décale la photo sous la ligne du titre */
+    margin-bottom: 0.5rem;
+    width: 180px;     /* Légère réduction pour équilibrer la hauteur */
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h2{font-size:1.25rem;margin:2rem 0 .75rem;padding-bottom:.25rem;border-bottom:1px solid #ddd}
+h3{font-size:1.05rem;margin:0 0 .15rem}
+p{margin:0 0 .75rem}
+nav{margin-top:1rem;display:flex;flex-wrap:wrap;gap:.25rem 1rem}
+.small{color:#666;font-size:.9rem}
+
+/* Listes */
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{margin-bottom:.25rem}
+ul.plain ul { padding-left: 1.5rem; margin-top: 0.25rem; list-style-type: disc; }
+
+/* Outils */
+.tools-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+/* Compétences */
+.skill {
+    display: grid;
+    grid-template-columns: 130px 1fr 3rem; /* 130px au lieu de 100px */
+    gap: .75rem;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.skill > span {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.bar{background:#e5e5e5;height:8px;border-radius:4px}
+.bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9) !important;
+    border-radius: 4px;
+}
+.skill b{font-weight:400;text-align:right}
+article{margin-bottom:1.25rem}
+
+/* Espacement des icônes */
+.fa, .fas, .fab, .fa-solid, .fa-brands {
+    margin-right: 0.4rem;
+}
+
+@media (max-width:520px){
+    .text-center h1{font-size:1.5rem}
+    .profil-pic {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+    .skill{grid-template-columns:85px 1fr 2.6rem}
+}
+
+body.dark-theme {
+    background-color: #1e1e1e; 
+    color: #e0e0e0; 
+}
+
+body.dark-theme header,
+body.dark-theme h1, 
+body.dark-theme h2 {
+    border-bottom: 1px solid #444;
+}
+
+body.dark-theme .small {
+    color: #aaa;
+}
+
+body.dark-theme .bar {
+    background: #333;
+}
