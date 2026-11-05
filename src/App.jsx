@@ -4,6 +4,8 @@ import Header from './components/Header'
 import About from './components/About'
 import Parcours from './components/Parcours'
 import './style.css'
+import Competences from './components/Competences';
+import Projets from './components/Projets'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
 
         <About />
         <Parcours />
+        <Competences />
+        <Projets />
       </main>
     </div>
   )
