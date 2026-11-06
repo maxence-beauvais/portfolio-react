@@ -1,4 +1,9 @@
+import { LangContext } from '../context/LangContext'; 
+import { useContext } from 'react'
+
 function Competences() {
+
+    const { lang }=  useContext(LangContext);
 
     const competencesData = [
     { nom: "HTML/CSS", icon: "fa-brands fa-html5", niveau: 75 },
@@ -20,12 +25,12 @@ function Competences() {
 
     return (
         <section id="competences">
-            <h2>Compétences</h2>
+            <h2>{lang === 'fr' ? "Compétences" : "Skills"}</h2>
             {competencesData.map((competence) => (
                 <div className="skill" key={competence.nom}><span><i className={competence.icon}></i>{competence.nom}</span><div className="bar"><span style={{width:`${competence.niveau}%`}}></span></div><b>{competence.niveau}%</b></div>
             ))}
             <div style={{ marginTop:`1rem`}}>
-                <strong>Outils :</strong> 
+                <strong>{lang === 'fr' ? "Outils :" : "Tools :"}</strong> 
                 <ul className="tools-list">
                     {outilsData.map((outil) => (
                         <li key={outil.nom}><i className={outil.icon} style={{color: 'rgb(0, 0, 0)'}}></i>{outil.nom}</li>

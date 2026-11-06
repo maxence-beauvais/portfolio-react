@@ -46,6 +46,8 @@ function App() {
         <Projets />
         <Atouts />
         <Contact />
+        <br/>
+        <p>{lang === 'fr' ? <>Ce portfolio a été entièrement migré de HTML/CSS/JS natif vers React. <a href="https://github.com/maxence-beauvais/portfolio-legacy" target="_blank" rel="noopener noreferrer">Code sur GitHub</a></> : <>This portfolio has been entirely migrated from native HTML/CSS/JS to React. <a href="https://github.com/maxence-beauvais/portfolio-legacy" target="_blank" rel="noopener noreferrer">Code on GitHub</a></>}</p>
       </main>
     </div>
   )
