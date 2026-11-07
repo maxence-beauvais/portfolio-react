@@ -8,6 +8,7 @@ import Competences from './components/Competences';
 import Projets from './components/Projets'
 import Atouts from './components/Atouts'
 import Contact from './components/Contact'
+import Experiences from './components/Experiences'
 import { LangContext } from './context/LangContext'
 import { useContext } from 'react'
 
@@ -36,13 +37,14 @@ function App() {
           <h1>Maxence Beauvais</h1>
           <p>
             {lang === 'fr' ? "Étudiant en BUT Informatique à l'IUT de Lens." : "Computer Science student at IUT de Lens."}<br />
-            { lang === 'fr' ? "Je cherche un stage en développement back-end à partir du 12 avril 2027." : "Looking for a back-end software engineering internship starting April 12, 2027."}
+            { lang === 'fr' ? "Je cherche un stage en développement à partir du 12 avril 2027." : "I am looking for an internship in development, starting on April 12, 2027."}
           </p>
         </div>
 
         <About />
         <Parcours />
         <Competences />
+        <Experiences />
         <Projets />
         <Atouts />
         <Contact />

@@ -7,25 +7,25 @@ function Projets() {
 
     const projetsData = [
     {
+        titre: "FractaLens",
+        type: "Projet universitaire, en équipe · Java",
+        description: "Conception et développement d’une bibliothèque Java pour la génération d’images fractales en utilisant des patrons de conception.",
+        lienGitHub: true,
+        lien: "https://github.com/maxence-beauvais/fractalens"
+    },
+    {
         titre: "Application de cabinet médical",
         type: "Projet universitaire, en équipe · Java",
         description: "Conception et développement d'une application Java pour la gestion administrative et médicale d'un cabinet.",
-        lienGitHub: false,
-        lien: ""
-    },
-    {
-        titre: "Agence événementielle",
-        type: "Projet universitaire · HTML, CSS",
-        description: "Business plan complet d'une agence événementielle et développement de son site web.",
-        lienGitHub: false,
-        lien: ""
-    },
-    {
-        titre: "Plateforme de chat (en cours)",
-        type: "Projet personnel · HTML, JavaScript",
-        description: "Messagerie en ligne avec échanges en temps réel entre utilisateurs connectés.",
         lienGitHub: true,
-        lien: "https://github.com/maxence-beauvais/plateforme-chat"
+        lien: "https://github.com/maxence-beauvais/gestion-cabinet-medical"
+    },
+    {
+        titre: "OtakuList (en cours)",
+        type: "Projet universitaire, en équipe · PHP, Laravel",
+        description: "Conception d'une application de gestion de mangas et animes avec système de notation, listes personnalisées et recommandations.",
+        lienGitHub: false,
+        lien: ""
     },
     {
         titre: "Suivi de finances",
