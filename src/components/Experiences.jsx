@@ -24,7 +24,7 @@ function Experiences() {
     const experience = lang === 'fr' ? exp : expEN
 
     return (
-        <section id="experiences">
+        <section id="experiences" className="glass-section">
             <h2>{lang === 'fr' ? "Expériences professionnelles" : "Professional Experience"}</h2>
             {experience.map((expe) => (
                 <>

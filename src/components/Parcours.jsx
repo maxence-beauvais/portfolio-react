@@ -6,7 +6,7 @@ function Parcours() {
     const { lang }=  useContext(LangContext);
 
     return (
-        <section id="parcours">
+        <section id="parcours" className="glass-section">
             <h2>{lang === 'fr' ? "Parcours" : "Educational background"}</h2>
             <article>
             <h3>{lang === 'fr' ? <>BUT Informatique, 2<sup>e</sup> année </>: <>Bachelor of Technology in CS, 2<sup>nd</sup> year</>}</h3>

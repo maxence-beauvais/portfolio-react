@@ -6,7 +6,7 @@ function About() {
     const { lang }=  useContext(LangContext);
     
     return (
-        <section id="apropos" className="clearfix">
+        <section id="apropos" className="glass-section">
             <h2>{lang === 'fr' ? "À propos" : "About me"}</h2>
             <img src="/images/IMG_2894.jpg" alt="Portrait de Maxence Beauvais" width="130" height="130" className="profil-pic"/>
             <p>{lang === 'fr' ? "Je suis en deuxième année de BUT Informatique à l'IUT de Lens, après un bac technologique en informatique à Arras. Je travaille en Java, SQL, PHP et Python." : "I am in my second year of a BUT (University Bachelor of Technology) program in Computer Science at the IUT of Lens, having previously completed a technological baccalaureate in computer science in Arras. I work with Java, SQL, PHP, and Python."}</p>

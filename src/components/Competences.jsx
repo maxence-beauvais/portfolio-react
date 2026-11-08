@@ -24,7 +24,7 @@ function Competences() {
     ];
 
     return (
-        <section id="competences">
+        <section id="competences" className="glass-section">
             <h2>{lang === 'fr' ? "Compétences" : "Skills"}</h2>
             {competencesData.map((competence) => (
                 <div className="skill" key={competence.nom}><span><i className={competence.icon}></i>{competence.nom}</span><div className="bar"><span style={{width:`${competence.niveau}%`}}></span></div><b>{competence.niveau}%</b></div>

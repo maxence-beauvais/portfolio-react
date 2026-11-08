@@ -94,6 +94,10 @@ a i {
     object-fit: cover;
     object-position: top;
     border-radius: 4px;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    background-origin: border-box;
+    border-radius: 12px;
 }
 
 .clearfix::after {
@@ -166,6 +170,17 @@ article{margin-bottom:1.25rem}
         width: 200px;
         margin-left: 25px;
     }
+    .skill {
+        grid-template-columns: 1fr 2.6rem;   
+        gap: .25rem .5rem;
+    }
+    .skill > span { grid-column: 1; }
+    .skill b      { grid-column: 2; }
+    .skill .bar   { grid-column: 1 / -1; width: auto; margin-left: 0;}
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 body.dark-theme {
@@ -185,4 +200,136 @@ body.dark-theme .small {
 
 body.dark-theme .bar {
     background: #333;
+}
+
+/* ==========================================
+   Section Glassmorphism (Effet Verre Dépoli)
+   ========================================== */
+
+.glass-section {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(226, 163, 226, 0.35);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 24px rgba(150, 196, 217, 0.15);
+}
+
+body.dark-theme .glass-section {
+    background: rgba(30, 30, 30, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.glass-section > h2:first-child {
+    margin-top: 0;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1.25rem;
+}
+
+.filtre-btn {
+    width: auto;
+    display: inline-block;
+    font-family: inherit;
+    font-size: .9rem;
+    color: #222;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(226, 163, 226, 0.6);
+    border-radius: 999px;
+    padding: .35rem .9rem;
+    cursor: pointer;
+    transition: background .2s, color .2s, transform .2s;
+}
+
+.filtre-btn:hover {
+    transform: translateY(-1px);
+    border-color: #96C4D9;
+}
+
+.filtre-btn.actif {
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    border-color: transparent;
+    color: #fff;
+}
+
+body.dark-theme .filtre-btn {
+    color: #eee;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+body.dark-theme .filtre-btn.actif {
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    border-color: transparent;
+    color: #fff;
+}
+
+/* ==========================================
+   Groupe du projet (onglets membres)
+   ========================================== */
+
+.small .filtre-btn {
+    margin-left: .6rem;
+    padding: .15rem .7rem;
+    font-size: .8rem;
+}
+
+.equipe {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(226, 163, 226, 0.4);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.equipe .filtres {
+    margin-bottom: 1rem;
+}
+
+.membre-fiche {
+    display: flow-root; /* la photo flottante ne déborde pas */
+}
+
+.membre-fiche h4 {
+    margin: 0 0 .5rem;
+}
+
+.membre-photo {
+    float: right;
+    margin: 0 0 .5rem 1rem;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #E2A3E2, #96C4D9);
+    background-origin: border-box;
+}
+
+.liens-membre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+
+body.dark-theme .equipe {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 520px) {
+    .membre-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
 }

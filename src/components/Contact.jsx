@@ -6,7 +6,7 @@ function Contact() {
     const { lang } = useContext(LangContext);   
     
     return (
-        <section id="contact">
+        <section id="contact" className="glass-section">
             <h2>Contact</h2>
             <ul className="plain">
                 <li><i className="fa-solid fa-envelope"></i> E-mail : <a href="mailto:maxence.beauvais.info@gmail.com">maxence.beauvais.info@gmail.com</a></li>
