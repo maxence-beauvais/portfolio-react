@@ -101,80 +101,79 @@ function Projets() {
         description: "Pac-Man, Taquin et Puissance 4 avec interface graphique.",
         lienGitHub: false,
         lien: "",
-        categories: "universitaire",
-        membres: dreamTeam
+        categories: "universitaire"
       }
     ];
 
     const projetsDataEN = [
-      {
-        titre: "Medical Clinic Application",
-        type: "Academic team project · Java",
-        description: "Design and development of a Java application for administrative and medical management of a clinic.",
-        lienGitHub: false,
-        lien: "",
-        categories: "universitaire",
-        membres: dreamTeam
-      },
-      {
-        titre: "Event Planning Agency",
-        type: "Academic project · HTML, CSS",
-        description: "Complete business plan for an event planning agency and development of its website.",
-        lienGitHub: false,
-        lien: "",
-        categories: "universitaire",
-        membres: dreamTeam
-      },
-      {
-        titre: "Chat Platform (In progress)",
-        type: "Personal project · HTML, JavaScript",
-        description: "Online messaging system featuring real-time communication between connected users.",
-        lienGitHub: true,
-        lien: "https://github.com/maxence-beauvais/plateforme-chat",
-        categories: "personnel"
-      },
-      {
-        titre: "Personal Finance Tracker",
-        type: "Personal project · HTML, JavaScript, SQL",
-        description: "Expense, income, and savings tracker with dashboards and charts. Data is stored in SQL.",
-        lienGitHub: false,
-        lien: "",
-        categories: "personnel"
-      },
-      {
-        titre: "Online Blackjack",
-        type: "Personal project · HTML, JavaScript, SQL",
-        description: "Browser-based blackjack game: player accounts, betting system, and full game logic.",
-        lienGitHub: false,
-        lien: "",
-        categories: "personnel"
-      },
-      {
-        titre: "Web Todo-List",
-        type: "Personal project · HTML, JavaScript",
-        description: "Task management web app to create, complete, and organize tasks by category.",
-        lienGitHub: true,
-        lien: "https://github.com/maxence-beauvais/todo-list",
-        categories: "personnel"
-      },
-      {
-        titre: "CS2 Desktop Launcher",
-        type: "Personal project · Python, CustomTkinter",
-        description: "Desktop launcher for Counter-Strike 2 featuring custom Discord Rich Presence integration.",
-        lienGitHub: false,
-        lien: "",
-        categories: "personnel"
-      },
-      {
-        titre: "JavaFX Games",
-        type: "Academic project · Java, JavaFX",
-        description: "Pac-Man, Sliding Puzzle (Taquin), and Connect Four with graphical user interface.",
-        lienGitHub: false,
-        lien: "",
-        categories: "universitaire",
-        membres: dreamTeam
-      }
-    ];
+    {
+      titre: "FractaLens",
+      type: "Academic team project · Java",
+      description: "Design and development of a Java library for generating fractal images using design patterns.",
+      lienGitHub: true,
+      lien: "https://github.com/maxence-beauvais/fractalens",
+      categories: "universitaire",
+      membres: dreamTeam
+    },
+    {
+      titre: "Medical Clinic Management Application",
+      type: "Academic team project · Java",
+      description: "Design and development of a Java application for the administrative and medical management of a clinic.",
+      lienGitHub: true,
+      lien: "https://github.com/maxence-beauvais/gestion-cabinet-medical",
+      categories: "universitaire",
+      membres: dreamTeam
+    },
+    {
+      titre: "OtakuList (In progress)",
+      type: "Academic team project · PHP, Laravel",
+      description: "Development of a manga and anime management application featuring rating systems, custom lists, and recommendations.",
+      lienGitHub: false,
+      lien: "",
+      categories: "universitaire",
+      membres: dreamTeam
+    },
+    {
+      titre: "Personal Finance Tracker",
+      type: "Personal project · HTML, JavaScript, SQL",
+      description: "Expense, income, and savings tracker with dashboards and charts. Data is stored in SQL.",
+      lienGitHub: false,
+      lien: "",
+      categories: "personnel"
+    },
+    {
+      titre: "Online Blackjack",
+      type: "Personal project · HTML, JavaScript, SQL",
+      description: "Browser-based blackjack game featuring player accounts, betting, and complete game logic.",
+      lienGitHub: false,
+      lien: "",
+      categories: "personnel"
+    },
+    {
+      titre: "Web Todo-List",
+      type: "Personal project · HTML, JavaScript",
+      description: "Web application for creating, completing, and organizing tasks by category.",
+      lienGitHub: true,
+      lien: "https://github.com/maxence-beauvais/todo-list",
+      categories: "personnel"
+    },
+    {
+      titre: "CS2 Launcher",
+      type: "Personal project · Python, CustomTkinter",
+      description: "Desktop launcher for Counter-Strike 2 featuring custom Discord Rich Presence integration.",
+      lienGitHub: false,
+      lien: "",
+      categories: "personnel"
+    },
+    {
+      titre: "JavaFX Games",
+      type: "Academic project · Java, JavaFX",
+      description: "Pac-Man, Sliding Puzzle (Taquin), and Connect Four featuring graphical user interfaces.",
+      lienGitHub: false,
+      lien: "",
+      categories: "universitaire"
+    }
+  ];
 
     const projets = lang === 'fr' ? projetsData : projetsDataEN;
 
