@@ -9,8 +9,8 @@ function Projets() {
       {
         prenom: "Thomas",
         nom: "Barloy",
-        photo: "",
-        description: { fr: "Aucune description pour le moment", en: "No description for the moment" },
+        photo: "/images/thomas.png",
+        description: { fr: "Motivé et sérieux, il prend part aux différentes missions du groupe et veille à apporter une contribution positive. Son esprit d'équipe et sa participation favorisent le bon déroulement du projet.", en: "Motivated and reliable, he takes part in the group's various tasks and strives to make a positive contribution. His team spirit and active participation help ensure the smooth running of the project." },
         github: "https://github.com/thomas-barloy",
         linkedin: "https://www.linkedin.com/in/thomas-barloy",
         portfolio: ""
